@@ -65,10 +65,10 @@ FROM eclipse-temurin:17-jre
 ENV TZ=Asia/Seoul
 
 # JAR 복사 (위 단계에서 생성된 JAR)
-COPY --from=build /crew-station/build/libs/crew-station-0.0.1-SNAPSHOT.jar crew-station.jar
+COPY --from=build /crew-station/build/libs/crewstation-0.0.1-SNAPSHOT.jar crewstation.jar
 
 # 포트 오픈 (Spring Boot 기본 포트)
 EXPOSE 10000
 
 # 실행 명령
-ENTRYPOINT ["java", "-jar", "crew-station.jar"]
+ENTRYPOINT ["java", "-jar", "crewstation.jar"]
