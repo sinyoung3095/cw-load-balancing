@@ -8,7 +8,7 @@
 --     tbl_like,
 --     tbl_diary,
 --     tbl_diary_country_path,
---     tbl_post,
+--     tbl_post,tbl_country
 --     tbl_country,
 --     tbl_member
 --     RESTART IDENTITY CASCADE;
