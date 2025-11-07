@@ -53,7 +53,7 @@ WORKDIR /crew-station
 # COPY <src> <dest>
 # <src>: 호스트(현재 디렉토리)의 경로
 # <dest>: 컨테이너 내부의 경로
-COPY . .
+COPY src .
 
 # Gradle 빌드 실행 (build/libs/*.jar 생성됨)
 RUN chmod +x ./gradlew && ./gradlew build
